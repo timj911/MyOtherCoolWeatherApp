@@ -4,8 +4,8 @@ var $$ = Dom7;
 // Framework7 App main instance
 var app = new Framework7({
     root: '#app', // App root element
-    id: 'io.framework7.testapp', // App bundle ID
-    name: 'Framework7', // App name
+    id: 'io.framework7.AwesomeApp', // App bundle ID
+    name: 'Awesome Weather App', // App name
     theme: 'auto', // Automatic theme detection
     routes: routes,   // App routes
 });
@@ -15,10 +15,12 @@ var mainView = app.views.create('.view-main', {
     url: '/'
 });
 
+//list of cities
 let cities = ('Pretoria,Polokwane,Johannesburg,Bloemfontein,Cape Town,Port Elizabeth,East London,Mthatha,Queenstown,' +
     'Uitenhage,Sasolburg,Soweto,Roodepoort,Vanderbijlpark,Vereeniging,Durban,Pietermaritzburg,Lebowakgomo,' +
     'Musina,Nelspruit,Emalahleni,Mafikeng,Rustenburg,Potchefstroom,Kimberley,Paarl,Stellenbosch,Worcester').split(',');
 
+//create auto complete
 app.autocomplete.create({
     inputEl: '#autocomplete-dropdown-placeholder',
     openIn: 'dropdown',
@@ -95,14 +97,13 @@ $$('#btnWeather').on('click', function () {
 
             if (status == 0)
             {
-                alert('no network');
+
             }
 
             if (status == 404)
             {
 
             }
-
 
             //alert('an error occurred');
             app.preloader.hide();

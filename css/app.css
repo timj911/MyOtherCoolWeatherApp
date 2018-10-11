@@ -1,0 +1,11 @@
+
+.demo-card-header-pic .card-header {
+    height: 100vw;
+    background-size: contain;
+    background-position: center;
+    object-fit: cover;
+}
+
+.demo-card-header-pic .card-content-padding .date{
+    color: #8e8e93;
+}

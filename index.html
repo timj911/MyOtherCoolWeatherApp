@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1,
+          maximum-scale=1, minimum-scale=1,
+          user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="theme-color" content="#2196f3">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>My App</title>
+
+    <link rel="stylesheet" href="framework7/css/framework7.min.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="app">
+
+    <!-- Your main view, should have "view-main" class -->
+    <div class="view view-main ios-edges">
+        <!-- Page, data-name contains page name which can be used in callbacks -->
+        <div class="page" data-name="home">
+
+            <!-- Top Navbar -->
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="title">My Awesome Weather App</div>
+                </div>
+            </div>
+
+            <div class="page-content">
+
+                <div class="list no-hairlines-md">
+                    <div class="block-header">Search for a city</div>
+                    <ul>
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-title item-label">City</div>
+                                <div class="item-input-wrap">
+                                    <input id="autocomplete-dropdown-placeholder"
+                                           type="text"
+                                           placeholder="City name">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="block">
+                    <a class="button"
+                       id="btnWeather">Load weather</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Framework7 library -->
+<script src="framework7/js/framework7.min.js"></script>
+
+<!-- App routes -->
+<script src="js/routes.js"></script>
+
+<!-- Your custom app scripts -->
+<script src="js/app.js"></script>
+</body>
+</html>

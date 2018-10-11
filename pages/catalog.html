@@ -1,0 +1,64 @@
+<div class="toolbar tabbar">
+    <div class="toolbar-inner">
+        <a href="#tab-1" class="tab-link tab-link-active">Login</a>
+        <a href="#tab-2" class="tab-link">Forgot Password</a>
+    </div>
+</div>
+<div class="tabs">
+    <div id="tab-1" class="page-content tab tab-active">
+        <div class="view">
+            <div class="page">
+                <div class="page-content login-screen-content">
+                    <div class="login-screen-title">Logo</div>
+                    <form>
+                        <div class="list">
+                            <ul>
+                                <li class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">Username</div>
+                                        <div class="item-input-wrap">
+                                            <input type="text"
+                                                   required
+                                                   validate
+                                                   name="username"
+                                                   placeholder="Your username">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content item-input">
+                                    <div class="item-inner">
+                                        <div class="item-title item-label">Password</div>
+                                        <div class="item-input-wrap">
+                                            <input type="password"
+                                                   required
+                                                   validate
+                                                   name="password"
+                                                   placeholder="Your password">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content item-input" style="padding-right: 20px">
+                                    <span>Remember me</span>
+                                    <label class="toggle toggle-init color-blue">
+                                        <input type="checkbox" checked>
+                                        <span class="toggle-icon"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <ul>
+                                <li><a class="item-link list-button" href="#">Log In</a></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="tab-2" class="page-content tab">
+        <div class="block">
+            <a class="button button-round" href="/about/">Next Page</a>
+        </div>
+    </div>
+</div>
